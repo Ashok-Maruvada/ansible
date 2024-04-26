@@ -1,14 +1,14 @@
 - name: install nginx
-  hosts: remote #according to the servers required to install nginx
-  become: yes #equal to -b in adhoc commands, getting root access
+  hosts: remote  #according to the servers required to install nginx
+  become: yes  #equal to -b in adhoc commands, getting root access
   tasks:
   - name: installing nginx
     ansible.builtin.dnf:
-    name: nginx
-    state: latest  #instaling latest version
+      name: nginx
+      state: latest   #instaling latest version
   - name: starting nginx
-    ansible.builtin.service: # some builtin packages
-    name: nginx
-    state: started  #starting the service
+    ansible.builtin.service:   #some builtin packages
+      name: nginx
+      state: started    #starting the service
 
   
