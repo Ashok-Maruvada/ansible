@@ -1,6 +1,6 @@
-- name: variavles from file
+- name: variables from file
   hosts: localhost
-  vars_files:
+  vars_files:  #calling variables from file
   - vars.yaml
   tasks:
   - name:
