@@ -5,12 +5,12 @@
     trainer: sivakumar
     duration: 120hrs
   tasks:
-  - name:
-    vars:
+  - name: printing override information
+    vars: #task level variables
       trainer: raghu
     ansible.builtin.debug:
      msg: hi, this is {{course}}, trainer is {{trainer}} and duration is {{duration}}
 
   - name:
     ansible.builtin.debug:
-      msg: hi, this is {{trainer}}
+      msg: hi, this is {{trainer}} # prints sivakumar as trainer
