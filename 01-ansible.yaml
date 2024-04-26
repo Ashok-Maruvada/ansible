@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: remote
+  tasks: #list of tasks or modules or collections, we need to run
+  - name: pinging the server
+    ansible.builtin.ping:
