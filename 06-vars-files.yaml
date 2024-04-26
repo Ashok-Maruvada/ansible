@@ -1,6 +1,6 @@
 - name: variavles from file
   hosts: localhost
-  vars:
+  vars_files:
   - var.yml
   tasks:
   - name:
