@@ -3,12 +3,12 @@
   task:
   - name: play1 and task1
     ansible.builtin.debug:
-    msg: "hi, this is ashok"
+      msg: "hi, this is ashok"
   
-  - name: play2
+- name: play2
   hosts: localhost
   task:
   - name: play2 and task1
     ansible.builtin.debug:
-    msg: "hi, this is ashok  from DevOps"
+      msg: "hi, this is ashok  from DevOps"
   
