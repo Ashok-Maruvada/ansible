@@ -1,7 +1,7 @@
 - name: variavles from file
   hosts: localhost
   vars_files:
-  - var.yml
+  - vars.yaml
   tasks:
   - name:
     ansible.builtin.debug:
