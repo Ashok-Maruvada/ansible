@@ -1,0 +1,15 @@
+- name: using conditions
+  hosts: localhost
+  tasks:
+    - name: check user
+      ansible.builtin.command: id expense
+      register: USER #saving success or failure output of above command in USER
+      ignore_errors: true
+
+    _ name: print user
+      ansible.builtin.debug:
+        msg: {{USER}}
+
+    - name: #creating user if not exists
+      ansible.builtin.command: useradd expense
+      when: USER.rc != 0 #condition
