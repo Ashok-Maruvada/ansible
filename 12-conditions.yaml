@@ -10,7 +10,8 @@
     - name: print user
       ansible.builtin.debug:
         msg: "{{USER}}""
-
-    - name: #creating user if not exists
+        
+    - name: create user
       ansible.builtin.command: useradd expense
       when: USER.rc != 0 #condition
+
