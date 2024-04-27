@@ -1,0 +1,17 @@
+- name: accessing variables from choices
+  hosts: localhost
+  vars:
+    wishes: "Morning from play variable"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+    - name: wishes
+      prompt: please enter wish
+      private: false
+  
+  tasks:
+  - name: printing variable
+    vars:
+      wishes: "morning from task variable"
+    ansible.builtin.debug:
+      msg: hi, good {{wishes}}
