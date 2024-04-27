@@ -7,7 +7,7 @@
       register: USER #saving success or failure output of above command in USER
       ignore_errors: true
 
-    _ name: print user
+    - name: print user
       ansible.builtin.debug:
         msg: {{USER}}
 
