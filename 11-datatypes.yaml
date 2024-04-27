@@ -6,7 +6,8 @@
     - ansible
     - jenkins
     - kubernetes
-    real-project: true #boolean
+    RealProject: true #boolean
+    
   tasks:
     - name: print info
       ansible.builtin.debug:
