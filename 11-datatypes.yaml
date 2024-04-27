@@ -10,4 +10,4 @@
   tasks:
     - name: print info
       ansible.builtin.debug:
-        msg: hi, course is {{course}}, tools are {{tools}}, is this real project: {{real project}}
+        msg: hi, course is {{course}}, tools are {{tools}}, is this real project- {{real project}}
