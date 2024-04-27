@@ -1,0 +1,13 @@
+- name: various datatypes
+  hosts: app
+  vars:
+    course: devops with AWS #string
+    tools:  #list
+      - ansible
+      - jenkins
+      - kubernetes
+    real project: true #boolean
+  tasks:
+    - name: print info
+      ansible.builtin.debug:
+        msg: hi, course is {{course}}, tools are {{tools}}, is this real project: {{real project}}
