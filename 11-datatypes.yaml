@@ -3,9 +3,9 @@
   vars:
     course: devops with AWS #string
     tools:  #list
-      - ansible
-      - jenkins
-      - kubernetes
+    - ansible
+    - jenkins
+    - kubernetes
     real project: true #boolean
   tasks:
     - name: print info
