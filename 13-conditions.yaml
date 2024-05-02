@@ -15,3 +15,5 @@
     ansible.builtin.debug:
       msg: "given number is {{number}} is greater than or equal to ten"
     when: number | int >= 10
+
+    # when text is given, it is considered as 0 and then compares
