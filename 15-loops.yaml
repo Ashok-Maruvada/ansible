@@ -1,11 +1,11 @@
 - name: basic loop 
   hosts: localhost
-  loop:
-  - ansible
-  - nginx
-  - mysql
   tasks:
   - name: 
     ansible.builtin.debug:
       msg: "{{ items }}"
+    loop:
+    - ansible
+    - nginx
+    - mysql
 
