@@ -3,7 +3,7 @@
   tasks:
   - name: 
     ansible.builtin.debug:
-      msg: "{{ items }}"
+      msg: "{{item}}"
     loop:
     - ansible
     - nginx
