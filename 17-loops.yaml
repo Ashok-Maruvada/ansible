@@ -1,7 +1,7 @@
 - name: install packages
   hosts: app
   become: yes
-  task:
+  tasks:
   - name: 
     ansible.builtin.dnf:
       name: "{{item.name}}"
