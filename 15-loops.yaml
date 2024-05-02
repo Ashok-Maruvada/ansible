@@ -3,8 +3,8 @@
   tasks:
   - name: 
     ansible.builtin.debug:
-      msg: "{{item}}"
-    loop:
+      msg: "{{item}}" # item is a reserved keyword in ansible
+    loop: # item check the loop to go over individually
     - ansible
     - nginx
     - mysql
